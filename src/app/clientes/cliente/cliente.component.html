@@ -1,0 +1,20 @@
+<h3 style="text-align: center;">Cliente Nuevo</h3>
+<form nz-fomr [formGroup]="formulario">
+  <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]= "20" nzRequiered >
+      Razón Social
+    </nz-form-label>
+    <nz-form-control [nzSm]= "14" [nzXs]= "20" nzErrorTip="Debe ingresar una Razón Social válida">
+      <input nz-input formControlName="razon-social"/>
+    </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item nr-row class="register-area">
+    <nz-form-control [nzSpan]="14" [nzOffset]="6">
+      <button nz-button nzType="primary">
+        Guardar Nuevo Cliente
+      </button>
+
+    </nz-form-control>
+  </nz-form-item>
+</form>

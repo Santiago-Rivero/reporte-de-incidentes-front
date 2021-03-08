@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isCollapsed = false;
-  titulo      = 'Reporte de Incidentes';
+  titulo      = 'Reportes de Incidentes';
 }

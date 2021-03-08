@@ -6,7 +6,7 @@
             [(nzCollapsed)]="isCollapsed"
             [nzTrigger]="null">
     <div class="sidebar-logo">
-      <a href="https://ng.ant.design/" target="_blank">
+      <a routerLink="/welcome" routerLinkActive="router-link-active">
         <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
         <h1>{{titulo}}</h1>
       </a>
@@ -19,6 +19,18 @@
           </li>
           <li nz-menu-item nzMatchRouter>
             <a routerLink="/incidentes/listado">Listado</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+      <li nz-submenu nzOpen nzTitle="Clientes" nzIcon="form">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/clientes/nuevo">Nuevo Cliente</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/clientes/listado-clientes">Listado de clientes</a>
           </li>
         </ul>
       </li>
